@@ -1,0 +1,13 @@
+D:\Course backups\Dotnet\Velliangiri\C#\Projects\bin\Debug\netcoreapp3.1\Projects.exe
+D:\Course backups\Dotnet\Velliangiri\C#\Projects\bin\Debug\netcoreapp3.1\Projects.deps.json
+D:\Course backups\Dotnet\Velliangiri\C#\Projects\bin\Debug\netcoreapp3.1\Projects.runtimeconfig.json
+D:\Course backups\Dotnet\Velliangiri\C#\Projects\bin\Debug\netcoreapp3.1\Projects.runtimeconfig.dev.json
+D:\Course backups\Dotnet\Velliangiri\C#\Projects\bin\Debug\netcoreapp3.1\Projects.dll
+D:\Course backups\Dotnet\Velliangiri\C#\Projects\bin\Debug\netcoreapp3.1\Projects.pdb
+D:\Course backups\Dotnet\Velliangiri\C#\Projects\obj\Debug\netcoreapp3.1\Projects.csprojAssemblyReference.cache
+D:\Course backups\Dotnet\Velliangiri\C#\Projects\obj\Debug\netcoreapp3.1\Projects.AssemblyInfoInputs.cache
+D:\Course backups\Dotnet\Velliangiri\C#\Projects\obj\Debug\netcoreapp3.1\Projects.AssemblyInfo.cs
+D:\Course backups\Dotnet\Velliangiri\C#\Projects\obj\Debug\netcoreapp3.1\Projects.csproj.CoreCompileInputs.cache
+D:\Course backups\Dotnet\Velliangiri\C#\Projects\obj\Debug\netcoreapp3.1\Projects.dll
+D:\Course backups\Dotnet\Velliangiri\C#\Projects\obj\Debug\netcoreapp3.1\Projects.pdb
+D:\Course backups\Dotnet\Velliangiri\C#\Projects\obj\Debug\netcoreapp3.1\Projects.genruntimeconfig.cache
