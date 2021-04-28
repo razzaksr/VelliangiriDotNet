@@ -6,36 +6,28 @@ namespace Projects
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("----------Welcome to Indian Oil Gas Refilling booking system----------");
-            Console.WriteLine("1. Verify your connection\n2. Book new refil\n3. Check status of refil\n4. Cancel refil\n5. Change connection detail");
-            int option=Int32.Parse(Console.ReadLine());
-            switch(option)
+            Console.WriteLine("Tell us annual salary: ");
+            double salary=Double.Parse(Console.ReadLine());
+            /* switch(salary)
             {
-                case 1:
-                Console.WriteLine("Enter the connection number to verify:");
-                break;
-                case 2:
-                Console.WriteLine("You are requested an new refil; press 1 to confirm: ");
-                int confirm=Int32.Parse(Console.ReadLine());
-                if(confirm==1)
-                {
-                    var refer=new Random().Next(100000);
-                    Console.WriteLine("Refil booked "+refer);
-                }
-                else
-                {
-                    Console.WriteLine("Booking cancelled");
-                }
-                break;
-                case 3:
-                Console.WriteLine("Enter the refernce number of refil to check");
-                break;
-                case 4:
-                Console.WriteLine("Enter the reference number to cancel refil");
-                break;
-                case 5:
-                Console.WriteLine("Enter the connection number to Change detail of ur wish:");
-                break;
+                case 3:Console.WriteLine("Personal Loan worth 1lack will be offered");break;
+                case 2:Console.WriteLine("Credit card worth 50k eligible for u");break;
+                default:Console.WriteLine("Nothing eligibile");break;
+            } */
+            if(salary>=3.5&&salary<6.1)
+            {
+                Console.WriteLine("Personal Loan worth 1lack will be offered");
+            }
+            else if(salary>=2.5&&salary<5)
+            {
+                Console.WriteLine("Credit card worth 50k offered");
+            }
+            else if(salary>=6)
+            {
+                Console.WriteLine("Business loan 3Lack will be offered");
+            }
+            else{
+                Console.WriteLine("Nothing eligibile");
             }
         }
     }   
