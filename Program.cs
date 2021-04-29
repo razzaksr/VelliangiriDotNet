@@ -6,29 +6,42 @@ namespace Projects
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Tell us annual salary: ");
-            double salary=Double.Parse(Console.ReadLine());
-            /* switch(salary)
+            /* int number=120;// init
+            while(number<=100)//cond
             {
-                case 3:Console.WriteLine("Personal Loan worth 1lack will be offered");break;
-                case 2:Console.WriteLine("Credit card worth 50k eligible for u");break;
-                default:Console.WriteLine("Nothing eligibile");break;
+                Console.WriteLine(number);number++;//iter
             } */
-            if(salary>=3.5&&salary<6.1)
+            /* int number=120;// init
+            do
             {
-                Console.WriteLine("Personal Loan worth 1lack will be offered");
-            }
-            else if(salary>=2.5&&salary<5)
+                Console.WriteLine(number);number++;//iter
+            }while(number<=100);//cond */
+            /* for(int number=120;number<=100;number++)
             {
-                Console.WriteLine("Credit card worth 50k offered");
-            }
-            else if(salary>=6)
+                Console.WriteLine(number);
+            } */
+            
+            
+            int available=36, billCount=0, billCollection=0;
+
+            while(available>0)
             {
-                Console.WriteLine("Business loan 3Lack will be offered");
+                Console.WriteLine("Welcome to RR Biriyani booking");
+                int count=Int32.Parse(Console.ReadLine());
+                if(count<=available)
+                {
+                    Console.WriteLine("u can have ur meal "+count);
+                    Console.WriteLine("Ur bill "+(count*80)+" for "+count+" of meals");
+                    available-=count;//iter
+                    billCount++;
+                    billCollection+=(count*80);
+                }
+                else
+                {
+                    Console.WriteLine("meals are over");
+                }
             }
-            else{
-                Console.WriteLine("Nothing eligibile");
-            }
+            Console.WriteLine("Total sale bill: "+billCount+" total collection "+billCollection);
         }
     }   
 }
