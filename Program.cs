@@ -6,42 +6,44 @@ namespace Projects
     {
         static void Main(string[] args)
         {
-            /* int number=120;// init
-            while(number<=100)//cond
+            /* int stock=40, days=5;
+            double cost=34900, collection=0.0;
+            for(;stock>0&&days>0;days--)
             {
-                Console.WriteLine(number);number++;//iter
-            } */
-            /* int number=120;// init
-            do
-            {
-                Console.WriteLine(number);number++;//iter
-            }while(number<=100);//cond */
-            /* for(int number=120;number<=100;number++)
-            {
-                Console.WriteLine(number);
-            } */
-            
-            
-            int available=36, billCount=0, billCollection=0;
-
-            while(available>0)
-            {
-                Console.WriteLine("Welcome to RR Biriyani booking");
-                int count=Int32.Parse(Console.ReadLine());
-                if(count<=available)
+                Console.WriteLine("AC Cost: "+cost);
+                Console.WriteLine("Tell us how many AC's you want "+days+" days left ");
+                int qty=Int32.Parse(Console.ReadLine());
+                if(qty<=stock)
                 {
-                    Console.WriteLine("u can have ur meal "+count);
-                    Console.WriteLine("Ur bill "+(count*80)+" for "+count+" of meals");
-                    available-=count;//iter
-                    billCount++;
-                    billCollection+=(count*80);
+                    stock-=qty;
+                    collection+=(qty*cost);
+                    Console.WriteLine(qty+" of AC's billed @ "+days+" with amount of "+(qty*cost));
                 }
-                else
+                else{
+                    Console.WriteLine("Only "+stock+" available");
+                }
+                cost-=(cost*0.075);
+            }
+            Console.WriteLine("Stock available after sale: "+stock);
+            Console.WriteLine("Total collection: "+collection); */
+
+            //continue,break words
+            for(int seat=1;seat<=30;seat++)
+            {
+                if(seat==2||seat==5||seat==9||seat%3==0)
+                    //break;
+                    continue;
+                
+                Console.WriteLine("Bring the amount: ");
+                int amt=Int32.Parse(Console.ReadLine());
+                if(amt>=220)
                 {
-                    Console.WriteLine("meals are over");
+                    Console.WriteLine("Seat booked for you @ "+seat);
+                }
+                else{
+                    Console.WriteLine("Insufficient to book");
                 }
             }
-            Console.WriteLine("Total sale bill: "+billCount+" total collection "+billCollection);
         }
     }   
 }
