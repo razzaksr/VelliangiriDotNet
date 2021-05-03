@@ -6,42 +6,44 @@ namespace Projects
     {
         static void Main(string[] args)
         {
-            /* int stock=40, days=5;
-            double cost=34900, collection=0.0;
-            for(;stock>0&&days>0;days--)
+            /* int start=Int32.Parse(Console.ReadLine());
+            int end=Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Prime series for "+start+" to "+end);
+            for(;start<=end;start++)
             {
-                Console.WriteLine("AC Cost: "+cost);
-                Console.WriteLine("Tell us how many AC's you want "+days+" days left ");
-                int qty=Int32.Parse(Console.ReadLine());
-                if(qty<=stock)
+                //Console.WriteLine("Loop for "+start);
+                if(start==2||start==3||start==5||start==7||start%2!=0&&start%3!=0&&start%5!=0&&start%7!=0)
                 {
-                    stock-=qty;
-                    collection+=(qty*cost);
-                    Console.WriteLine(qty+" of AC's billed @ "+days+" with amount of "+(qty*cost));
+                    Console.WriteLine(start);
                 }
-                else{
-                    Console.WriteLine("Only "+stock+" available");
+            } */
+            // nested loop for multiplication tables
+            /* for(int tab=1;tab<=10;tab++)
+            {
+                Console.WriteLine("Table "+tab);
+                for(int number=1;number<=10;number++)
+                {
+                    Console.WriteLine(number+" X "+tab+" = "+(number*tab));
                 }
-                cost-=(cost*0.075);
-            }
-            Console.WriteLine("Stock available after sale: "+stock);
-            Console.WriteLine("Total collection: "+collection); */
+            } */
 
-            //continue,break words
-            for(int seat=1;seat<=30;seat++)
+            // nested loop realtime
+            for(int house=1;house<=10;house++)
             {
-                if(seat==2||seat==5||seat==9||seat%3==0)
-                    //break;
-                    continue;
-                
-                Console.WriteLine("Bring the amount: ");
-                int amt=Int32.Parse(Console.ReadLine());
-                if(amt>=220)
+                Console.WriteLine("Tell us person in "+house+" house");
+                int count=Int32.Parse(Console.ReadLine());
+                for(int person=1;person<=count;person++)
                 {
-                    Console.WriteLine("Seat booked for you @ "+seat);
-                }
-                else{
-                    Console.WriteLine("Insufficient to book");
+                    Console.WriteLine("Tell us age: ");
+                    int age=Int32.Parse(Console.ReadLine());
+                    if(age>=45)
+                    {
+                        Console.WriteLine("Vaccine must for "+person+" @ "+house);
+                    }
+                    else
+                    {
+                        Console.WriteLine("No need");
+                    }
                 }
             }
         }
