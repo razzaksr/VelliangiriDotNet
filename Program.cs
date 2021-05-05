@@ -6,46 +6,77 @@ namespace Projects
     {
         static void Main(string[] args)
         {
-            /* int start=Int32.Parse(Console.ReadLine());
-            int end=Int32.Parse(Console.ReadLine());
-            Console.WriteLine("Prime series for "+start+" to "+end);
-            for(;start<=end;start++)
+            int collection=0, seek=0, count=0;
+            Console.WriteLine("Tell us which amount to find count: ");
+            seek=Int32.Parse(Console.ReadLine());
+            for(int street=1;street<=4;street++)
             {
-                //Console.WriteLine("Loop for "+start);
-                if(start==2||start==3||start==5||start==7||start%2!=0&&start%3!=0&&start%5!=0&&start%7!=0)
+                for(int house=1;house<=10;house++)
                 {
-                    Console.WriteLine(start);
-                }
-            } */
-            // nested loop for multiplication tables
-            /* for(int tab=1;tab<=10;tab++)
-            {
-                Console.WriteLine("Table "+tab);
-                for(int number=1;number<=10;number++)
-                {
-                    Console.WriteLine(number+" X "+tab+" = "+(number*tab));
-                }
-            } */
-
-            // nested loop realtime
-            for(int house=1;house<=10;house++)
-            {
-                Console.WriteLine("Tell us person in "+house+" house");
-                int count=Int32.Parse(Console.ReadLine());
-                for(int person=1;person<=count;person++)
-                {
-                    Console.WriteLine("Tell us age: ");
-                    int age=Int32.Parse(Console.ReadLine());
-                    if(age>=45)
+                    Console.WriteLine("Tell us amount to donate: ");
+                    int amt=Int32.Parse(Console.ReadLine());
+                    collection+=amt;
+                    if(amt==seek)
                     {
-                        Console.WriteLine("Vaccine must for "+person+" @ "+house);
-                    }
-                    else
-                    {
-                        Console.WriteLine("No need");
+                        count++;
                     }
                 }
             }
+            Console.WriteLine("Total collection for covid relief fund: "+collection);
+            Console.WriteLine(count+" of person gave "+seek+" amount");
+            /* int collection=0, max1=Int32.MinValue, max2=Int32.MinValue,max3=Int32.MinValue;
+            for(int street=15;street<=18;street++)
+            {
+                for(int house=1;house<=10;house++)
+                {
+                    Console.WriteLine("Request to donate for relief fund for covid");
+                    int amt=Int32.Parse(Console.ReadLine());
+                    collection+=amt;
+                    if(amt>max1)
+                    {
+                        max3=max2;
+                        max2=max1;
+                        max1=amt;
+                    }
+                    else if(amt>max2&&amt!=max1)
+                    {
+                        max3=max2;
+                        max2=amt;
+                    }
+                    else if(amt>max3&&amt!=max1&&amt!=max2)
+                    {
+                        max3=amt;
+                    }
+                }
+            }
+            Console.WriteLine("Total collection for covid relief fund: "+collection);
+            Console.WriteLine(max1+","+max2+","+max3+" is Top 3 maximum donations obtained"); */
+            /* String chart="-------\n";
+            for(int row=1;row<=5;row++)
+            {
+                chart+="|";
+                for(int seats=1;seats<=4;seats++)
+                {
+                    Console.WriteLine("Bring the amount: ");
+                    int amt=Int32.Parse(Console.ReadLine());
+                    if(seats==3)
+                    {
+                        chart+=" ";
+                    }
+                    if(amt>=260)
+                    {
+                        Console.WriteLine("You can travel @ "+seats+" in "+row+" row");
+                        chart+="$";
+                    }
+                    else{
+                        Console.WriteLine("Insufficient to travel");
+                        chart+="#";
+                    }
+                }
+                chart+="|\n";
+            }
+            chart+="-------\n";
+            Console.WriteLine(chart); */
         }
     }   
 }
