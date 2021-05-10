@@ -6,77 +6,33 @@ namespace Projects
     {
         static void Main(string[] args)
         {
-            // left upper floyd
-            for(int row=1;row<=5;row++)
+            int[] cost={14900,56000,21000,31999,3400,1999,8999,10999};
+            Console.WriteLine("Tell us index to read: ");
+            int pos=Int32.Parse(Console.ReadLine());
+            Console.WriteLine(cost[pos]+" is cost in "+pos+" position");
+            /* double[] feed=new double[10];
+            int index=4;
+            while(index<feed.Length-2)
             {
-                for(int col=1;col<=row;col++)
-                {
-                    Console.Write("$");
-                }
-                Console.WriteLine();
+                Console.WriteLine("Enter the value @ "+index);
+                feed[index]=Double.Parse(Console.ReadLine());
+                index++;
             }
-            // right upper floyd
-            for(int row=1;row<=5;row++)
+            foreach(double third in feed)
             {
-                for(int spc=5-1;spc>=row;spc--)
-                {
-                    Console.Write(" ");
-                }
-                for(int col=1;col<=row;col++)
-                {
-                    Console.Write("$");
-                }
-                Console.WriteLine();
-            }
-            // upper pascal
-            for(int row=1;row<=5;row++)
+                Console.WriteLine(third);
+            } */
+            /* String[] yet={"Hayato","Kelly","Alok","Maxim","Andrews"};
+            Console.WriteLine(yet.Length);
+            Console.WriteLine(yet);
+            /* for(int index=2;index<yet.Length-1;index++)
             {
-                for(int spc=5-1;spc>=row;spc--)
-                {
-                    Console.Write(" ");
-                }
-                for(int col=1;col<=row;col++)
-                {
-                    Console.Write("$ ");
-                }
-                Console.WriteLine();
-            }
-            // upper pyramid
-            int limit=1;
-            for(int row=1;row<=5;row++)
-            {
-                for(int spc=5-1;spc>=row;spc--)
-                {
-                    Console.Write(" ");
-                }
-                for(int col=1;col<=limit;col++)
-                {
-                    Console.Write("$");
-                }
-                limit+=2;Console.WriteLine();
-            }
-            // Patterns
-            /* for(int row=1;row<=5;row++)
-            {
-                for(int col=1;col<=5;col++)
-                {
-                    Console.Write("$");
-                }
-                Console.WriteLine();
-            }
-
-            String alpha="Mohamed";
-            /* for(int row=1;row<alpha.Length;row++)
-            {
-                Console.WriteLine(alpha);
+                Console.WriteLine(yet[index]);
             } 
-            for(int row=1;row<=alpha.Length;row++)
+
+            foreach(String third in yet)
             {
-                for(int col=0;col<alpha.Length;col++)
-                {
-                    Console.Write((int)alpha[col]+" ");
-                }
-                Console.WriteLine();
+                Console.WriteLine(third);
             } */
         }
     }   
