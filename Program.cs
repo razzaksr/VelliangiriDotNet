@@ -4,82 +4,59 @@ namespace Projects
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] yet)
         {
-            Int32[] transaction=new Int32[10];
-            Int32 noOfDeb=0, charges=0;
-            for(int index=0;index<transaction.Length;index++)
+            
+
+            //selection sort            
+            /* 
+            double[] yet={8.9,12.5,0.2,5.6,7.9,3.4,5.9,1.3,12.1,4.4};
+            for(int hold=0;hold<yet.Length;hold++)
             {
-                transaction[index]=Int32.Parse(Console.ReadLine());
-                if((index-1)!=-1)
+                for(int com=hold+1;com<yet.Length;com++)
                 {
-                    if(transaction[index]<transaction[index-1])
+                    if(yet[hold]<yet[com])
                     {
-                        noOfDeb++;
+                        yet[hold]*=yet[com];
+                        yet[com]=yet[hold]/yet[com];
+                        yet[hold]/=yet[com];
+                    }
+                }
+            } 
+            foreach(double tmp in yet)
+            {
+                Console.Write(tmp+" ");
+            }
+            */
+
+            //bubble sort
+            /* String third;
+            Console.WriteLine("Bubble sorting will be done");
+            for(int times=0;times<yet.Length-1;times++)
+            {
+                for(int bub=0;bub<yet.Length-times-1;bub++)
+                {
+                    if(yet[bub].CompareTo(yet[bub+1])>0)
+                    {
+                        third=yet[bub];
+                        yet[bub]=yet[bub+1];
+                        yet[bub+1]=third;
                     }
                 }
             }
-            if(noOfDeb>3)
+            foreach(String tmp in yet)
             {
-                charges=(noOfDeb-3)*20;
-                transaction[transaction.Length-1]-=charges;
-            }
-            Console.WriteLine("Available balance : "+transaction[transaction.Length-1] );
-            Console.WriteLine(charges+" has to pay for "+noOfDeb);
-
-            /* Double[] wfh={4.5,12.5,0.9,4.2,3.1,15.6,19.1,2.8,0.9,5.9,1.8,6.9,10.5};
-            Console.WriteLine("Tell us start range u wish to delete: ");
-            Double start=Double.Parse(Console.ReadLine());
-            Console.WriteLine("Tell us end range u wish to delete: ");
-            Double end=Double.Parse(Console.ReadLine());
-            for(int pos=0;pos<wfh.Length;pos++)
-            {
-                if(wfh[pos]>=start&&wfh[pos]<=end)
-                {
-                    wfh[pos]=0.0;
-                }
-                Console.Write(wfh[pos]+" ");
+                Console.Write(tmp+" ");
             } */
-            /* double[] wfh={4.5,12.5,0.9,4.2,3.1,15.6,19.1,2.8,0.9,5.9,1.8,6.9,10.5};
-            Array.Sort(wfh);
-            foreach(double third in wfh)
-            {
-                Console.WriteLine(third);
-            } */
-            /* double[] wfh={4.5,12.5,0.9,4.2,3.1,15.6,19.1,2.8,0.9,5.9,1.8,6.9,10.5};
-            foreach(double third in wfh)
-            {
-                Console.WriteLine(third);
-            }
-            for(int index=0;index<wfh.Length;index++)
-            {
-                if(wfh[index]>=7.1)
-                {
-                    wfh[index]-=(wfh[index]*0.020);
-                }
-                Console.WriteLine(wfh[index]);
-            } */
-
-            /* String[] team={"Kelly","Chrono","Alok","Evans","Downey","Holland","Jhonson","Wanda","Hemsworth","Pratt","Rusou","Hiddleson","Maxim","Hayato"};
-            foreach(String third in team)
-            {
-                if(third.EndsWith('a')||third.EndsWith('e')||third.EndsWith('i')||third.EndsWith('o')||third.EndsWith('u'))
-                {
-                    Console.WriteLine(third);
-                }
-            } */
-            /* Int16[] yet={89,90,4,45,12,67,41,91,38,45,10,8,4,18,49,51,62,12,87};
-            Console.WriteLine("Tell us data to find in array: ");
-            Int16 data=Int16.Parse(Console.ReadLine());
-            //linear search
-            for(int index=0;index<yet.Length;index++)
-            {
-                if(yet[index]==data)
-                {
-                    Console.WriteLine(data+" found @ "+index);
-                    //break;
-                }
-            } */
+            /* 
+            //command line argument
+            Console.WriteLine(args.Length);
+            String name=args[0];
+            String skill=args[1];
+            int exp=Int32.Parse(args[2]);
+            float ctc=float.Parse(args[3]);
+            Int64 contact=Int64.Parse(args[4]);
+            Console.WriteLine("Dear "+name+", Thanks for applying the job with following Skillset "+skill+", experience of "+exp+", current ctc of "+ctc+". The application confirmation has sent as SMS to your mobile "+contact); */
         }
     }   
 }
