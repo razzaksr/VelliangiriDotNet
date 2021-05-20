@@ -4,55 +4,25 @@ namespace Projects
 {
     class Program
     {
-        public static String[] filter(String[] yet)
+        public static int Binary(double[] yet,int start,int end, double value)
         {
-            String[] fname=new String[yet.Length];
-            for(int index=0;index<yet.Length;index++)
-            {
-                fname[index]=yet[index].Split(" ")[1];
-            }
-            return fname;
-        }
-
-        public static int clickOnIt()
-        {
-            Random random=new Random();
-            return random.Next(999999);
-        }
-
-        public static void haiThere(int count=1) // recursive
-        {
-            Console.WriteLine("Hai Called @ "+count);
-            if(count<10)
-            {
-                count++;haiThere(count);
-            }
+            int mid=(start+end)/2;
+            if(yet[mid]==value)
+                return mid;
+            else if(yet[mid]>value)
+                return Binary(yet,start,mid,value);
+            else if(yet[mid]<value)
+                return Binary(yet,mid+1,end,value);
             else
-                return;
+                return -1;
         }
-
-        public static void list(String[] hai,int index=0)
-        {
-            if(index>=hai.Length)
-                return;
-            Console.Write(hai[index]+" ");
-            index++;
-            list(hai,index);
-        }
-
         static void Main(string[] react)
         {
-            /* String[] cast={"Tom Holland","Chris Pratt","Robert Downey","Chris Evans","Chris Helmsworth"};
-            String[] hai=Program.filter(cast);
-            foreach(String tmp in hai)
-            {
-                Console.WriteLine(tmp);
-            } */
-            /* int otp=Program.clickOnIt();
-            Console.WriteLine("OTP is:"+otp); */
-            //haiThere();
-            String[] cast={"Tom Holland","Chris Pratt","Robert Downey","Chris Evans","Chris Helmsworth"};
-            Program.list(cast);
+            double[] exp={0.4,1.9,4.5,6.1,7.3,8.10,12.4};
+            Console.WriteLine("Tell us value wish to find its position: ");
+            double data=Double.Parse(Console.ReadLine());
+            int pos=Program.Binary(exp,0,exp.Length-1,data);
+            Console.WriteLine(data+" exists @ "+pos);
         }
     }   
 }
