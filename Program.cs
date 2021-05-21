@@ -4,25 +4,30 @@ namespace Projects
 {
     class Program
     {
-        public static int Binary(double[] yet,int start,int end, double value)
+        public static void outting(out double salary,out int exp)
         {
-            int mid=(start+end)/2;
-            if(yet[mid]==value)
-                return mid;
-            else if(yet[mid]>value)
-                return Binary(yet,start,mid,value);
-            else if(yet[mid]<value)
-                return Binary(yet,mid+1,end,value);
-            else
-                return -1;
+            Console.WriteLine("Your expected salary: ");
+            salary=Double.Parse(Console.ReadLine());
+            Console.WriteLine("Your current experience: ");
+            exp=Int32.Parse(Console.ReadLine());
+        } 
+        public static void party(ref String yet)
+        {
+            String tmp=yet.Substring(2,6);
+            yet=tmp;
         }
         static void Main(string[] react)
         {
-            double[] exp={0.4,1.9,4.5,6.1,7.3,8.10,12.4};
-            Console.WriteLine("Tell us value wish to find its position: ");
-            double data=Double.Parse(Console.ReadLine());
-            int pos=Program.Binary(exp,0,exp.Length-1,data);
-            Console.WriteLine(data+" exists @ "+pos);
+
+            double ctc=0.0;int e=0;
+            Console.WriteLine("In Main UR Salary: "+ctc+" experience: "+e);
+            Program.outting(out ctc,out e);
+            Console.WriteLine("In Main UR Salary: "+ctc+" experience: "+e);
+
+            /* String mine="Salem, Tamilnadu, India";
+            Console.WriteLine("mine in main: "+mine);
+            Program.party(ref mine);
+            Console.WriteLine("mine in main: "+mine); */
         }
     }   
 }
