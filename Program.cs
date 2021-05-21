@@ -4,30 +4,42 @@ namespace Projects
 {
     class Program
     {
-        public static void outting(out double salary,out int exp)
-        {
-            Console.WriteLine("Your expected salary: ");
-            salary=Double.Parse(Console.ReadLine());
-            Console.WriteLine("Your current experience: ");
-            exp=Int32.Parse(Console.ReadLine());
-        } 
-        public static void party(ref String yet)
-        {
-            String tmp=yet.Substring(2,6);
-            yet=tmp;
-        }
         static void Main(string[] react)
         {
+            String alpha="zealous";// literal way
+            String beta=new String("zEAlous");// non-literal way
+            //Class object=dynamic_m/y Constructor(value)
 
-            double ctc=0.0;int e=0;
-            Console.WriteLine("In Main UR Salary: "+ctc+" experience: "+e);
-            Program.outting(out ctc,out e);
-            Console.WriteLine("In Main UR Salary: "+ctc+" experience: "+e);
+            Console.WriteLine(alpha==beta);
 
-            /* String mine="Salem, Tamilnadu, India";
-            Console.WriteLine("mine in main: "+mine);
-            Program.party(ref mine);
-            Console.WriteLine("mine in main: "+mine); */
+            beta=beta.ToLower();// Immutability
+            Console.WriteLine(beta);
+
+            Console.WriteLine(alpha.CompareTo(beta));
+            Console.WriteLine(beta.Equals(alpha));
+
+            beta="  zealous academy salem   ";
+            Console.WriteLine(beta.Length+" "+alpha.Length);
+            beta=beta.Trim();
+            Console.WriteLine(beta.Length);
+
+            Console.WriteLine(alpha[2]);
+            Console.WriteLine(beta.Substring(4,10));// fromindex, no of chars
+
+            Console.WriteLine(beta.GetHashCode());
+            Console.WriteLine(alpha.Contains("alo"));
+            Console.WriteLine(beta.Contains("alem"));
+
+            beta=beta.Replace("salem","of career");
+
+            Console.WriteLine(beta);
+
+            Console.WriteLine(alpha.StartsWith("Ze"));
+            Console.WriteLine(beta.EndsWith("er"));
+
+            Console.WriteLine(alpha+" tech corp");
+            alpha+=" tech corp";
+            Console.WriteLine(alpha);
         }
     }   
 }
