@@ -4,42 +4,37 @@ namespace Projects
 {
     class Program
     {
+
+        int[] data={56,90,12,4,310,5,78,18,6,23};
+        public int findOut(int value)
+        {
+            Array.Sort(data);
+            return Array.BinarySearch(data,0,data.Length,value);
+        }
         static void Main(string[] react)
         {
-            String alpha="zealous";// literal way
-            String beta=new String("zEAlous");// non-literal way
-            //Class object=dynamic_m/y Constructor(value)
+            KartItem ki1=new KartItem();
+            ki1.name="128gb otg pendrive";
+            ki1.brand="Sandisk";
+            ki1.cost=1344;
+            
+            KartItem ki2=new KartItem();
+            ki2.name="Casuals";
+            ki2.brand="Rebok";
+            ki2.cost=2199;
 
-            Console.WriteLine(alpha==beta);
+            ki1.Look();
+            ki2.Look();
 
-            beta=beta.ToLower();// Immutability
-            Console.WriteLine(beta);
-
-            Console.WriteLine(alpha.CompareTo(beta));
-            Console.WriteLine(beta.Equals(alpha));
-
-            beta="  zealous academy salem   ";
-            Console.WriteLine(beta.Length+" "+alpha.Length);
-            beta=beta.Trim();
-            Console.WriteLine(beta.Length);
-
-            Console.WriteLine(alpha[2]);
-            Console.WriteLine(beta.Substring(4,10));// fromindex, no of chars
-
-            Console.WriteLine(beta.GetHashCode());
-            Console.WriteLine(alpha.Contains("alo"));
-            Console.WriteLine(beta.Contains("alem"));
-
-            beta=beta.Replace("salem","of career");
-
-            Console.WriteLine(beta);
-
-            Console.WriteLine(alpha.StartsWith("Ze"));
-            Console.WriteLine(beta.EndsWith("er"));
-
-            Console.WriteLine(alpha+" tech corp");
-            alpha+=" tech corp";
-            Console.WriteLine(alpha);
+            //Console.WriteLine(ki1.brand+" "+ki1.name+" "+ki1.cost);
+            //Console.WriteLine(ki2.brand+" "+ki2.name+" "+ki2.cost);
+            //Classname objectName=new Classname();
+            /* Program program=new Program();
+            foreach(int tmp in program.data)
+            {
+                Console.Write(tmp+" ");
+            }
+            Console.WriteLine("\nPosition of 18 is: "+program.findOut(18)); */
         }
     }   
 }
