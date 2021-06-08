@@ -3,8 +3,8 @@ namespace Projects
 {
     class KartItem
     {
-        public String name, brand;
-        public int cost;
+        String name, brand;
+        int cost;
 
         public void Look()
         {
