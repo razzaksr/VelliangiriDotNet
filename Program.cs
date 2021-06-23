@@ -1,33 +1,39 @@
 ﻿using System;
 namespace Projects
 {
-    class Program:Beta
+    class Program:Term
     {
-        public void greet()=>Console.WriteLine("Beta Wishes you lot!");
-
+        public override int read(string desired)
+        {
+            for(int pos=0;pos<tech.Length;pos++)
+            {
+                if(desired.Equals(tech[pos]))
+                {
+                    return pos;
+                }
+            }
+            return -1;
+        }
+        //non abstract method/ method with body{}
+        public void greet(){Console.WriteLine("Beta Wishes you lot!");}
         static void Main(string[] react)
         {
-            CheckSome check=new CheckSome(1119);
-            check.setAccBal(230.4);check.setAccNum(764567654L);
-            check.billPay(120,"EB");
-            /* 
-            // Class vs Interface Demo
-            Alpha alpha=new Alpha();
-            alpha.hello();
-            //Beta beta=new Beta();
-            //Program program=new Program();
-            //program.greet();
-            Beta beta=new Program();
-            beta.greet(); */
-            /* 
-            // Multilevel Example
-            Netbanking netbanking=new Netbanking(765456786L,23490.4);
-            Console.WriteLine(netbanking);
-            Console.WriteLine(netbanking+100);
-            Console.WriteLine(netbanking-19800);
-            Console.WriteLine(netbanking); */
-
-
+            //Term term=new Program();
+            Program term=new Program();
+            term.traverse();
+            term.greet();
+            Console.WriteLine(term.read("DJango"));
         }
-    }   
+    }
+
+    abstract class Term
+    {
+        protected String[] tech={"Spring","Hibernate","JUnit","Mockito","DJango","Flask","React"};
+        public void traverse()
+        {
+            foreach(String tmp in tech){Console.WriteLine(tmp);}
+        }
+
+        public abstract int read(String desired);
+    }
 }
