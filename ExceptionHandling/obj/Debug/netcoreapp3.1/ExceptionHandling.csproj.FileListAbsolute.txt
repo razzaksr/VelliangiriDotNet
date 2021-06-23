@@ -1,0 +1,13 @@
+D:\Course backups\Dotnet\Velliangiri\C#\ExceptionHandling\bin\Debug\netcoreapp3.1\ExceptionHandling.exe
+D:\Course backups\Dotnet\Velliangiri\C#\ExceptionHandling\bin\Debug\netcoreapp3.1\ExceptionHandling.deps.json
+D:\Course backups\Dotnet\Velliangiri\C#\ExceptionHandling\bin\Debug\netcoreapp3.1\ExceptionHandling.runtimeconfig.json
+D:\Course backups\Dotnet\Velliangiri\C#\ExceptionHandling\bin\Debug\netcoreapp3.1\ExceptionHandling.runtimeconfig.dev.json
+D:\Course backups\Dotnet\Velliangiri\C#\ExceptionHandling\bin\Debug\netcoreapp3.1\ExceptionHandling.dll
+D:\Course backups\Dotnet\Velliangiri\C#\ExceptionHandling\bin\Debug\netcoreapp3.1\ExceptionHandling.pdb
+D:\Course backups\Dotnet\Velliangiri\C#\ExceptionHandling\obj\Debug\netcoreapp3.1\ExceptionHandling.csprojAssemblyReference.cache
+D:\Course backups\Dotnet\Velliangiri\C#\ExceptionHandling\obj\Debug\netcoreapp3.1\ExceptionHandling.AssemblyInfoInputs.cache
+D:\Course backups\Dotnet\Velliangiri\C#\ExceptionHandling\obj\Debug\netcoreapp3.1\ExceptionHandling.AssemblyInfo.cs
+D:\Course backups\Dotnet\Velliangiri\C#\ExceptionHandling\obj\Debug\netcoreapp3.1\ExceptionHandling.csproj.CoreCompileInputs.cache
+D:\Course backups\Dotnet\Velliangiri\C#\ExceptionHandling\obj\Debug\netcoreapp3.1\ExceptionHandling.dll
+D:\Course backups\Dotnet\Velliangiri\C#\ExceptionHandling\obj\Debug\netcoreapp3.1\ExceptionHandling.pdb
+D:\Course backups\Dotnet\Velliangiri\C#\ExceptionHandling\obj\Debug\netcoreapp3.1\ExceptionHandling.genruntimeconfig.cache
