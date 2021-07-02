@@ -6,8 +6,11 @@ namespace Files
     {
         static void Main(string[] args)
         {
-            DemoBinaries.write();
-            DemoBinaries.read();
+            //SeriDeseri.serialize();
+            SeriDeseri.deserialize();
+
+            //DemoBinaries.write();
+            //DemoBinaries.read();
 
             //DemoTextReadWrite.writetoFile();
             //DemoTextReadWrite.readFromFile();
