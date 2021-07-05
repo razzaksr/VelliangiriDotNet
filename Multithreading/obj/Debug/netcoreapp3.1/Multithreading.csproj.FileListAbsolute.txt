@@ -1,0 +1,13 @@
+D:\Course backups\Dotnet\Velliangiri\C#\Multithreading\bin\Debug\netcoreapp3.1\Multithreading.exe
+D:\Course backups\Dotnet\Velliangiri\C#\Multithreading\bin\Debug\netcoreapp3.1\Multithreading.deps.json
+D:\Course backups\Dotnet\Velliangiri\C#\Multithreading\bin\Debug\netcoreapp3.1\Multithreading.runtimeconfig.json
+D:\Course backups\Dotnet\Velliangiri\C#\Multithreading\bin\Debug\netcoreapp3.1\Multithreading.runtimeconfig.dev.json
+D:\Course backups\Dotnet\Velliangiri\C#\Multithreading\bin\Debug\netcoreapp3.1\Multithreading.dll
+D:\Course backups\Dotnet\Velliangiri\C#\Multithreading\bin\Debug\netcoreapp3.1\Multithreading.pdb
+D:\Course backups\Dotnet\Velliangiri\C#\Multithreading\obj\Debug\netcoreapp3.1\Multithreading.csprojAssemblyReference.cache
+D:\Course backups\Dotnet\Velliangiri\C#\Multithreading\obj\Debug\netcoreapp3.1\Multithreading.AssemblyInfoInputs.cache
+D:\Course backups\Dotnet\Velliangiri\C#\Multithreading\obj\Debug\netcoreapp3.1\Multithreading.AssemblyInfo.cs
+D:\Course backups\Dotnet\Velliangiri\C#\Multithreading\obj\Debug\netcoreapp3.1\Multithreading.csproj.CoreCompileInputs.cache
+D:\Course backups\Dotnet\Velliangiri\C#\Multithreading\obj\Debug\netcoreapp3.1\Multithreading.dll
+D:\Course backups\Dotnet\Velliangiri\C#\Multithreading\obj\Debug\netcoreapp3.1\Multithreading.pdb
+D:\Course backups\Dotnet\Velliangiri\C#\Multithreading\obj\Debug\netcoreapp3.1\Multithreading.genruntimeconfig.cache

@@ -1,0 +1,42 @@
+Multithreading:
+
+Concurrent/parellel process
+
+Application/ Process:
+Free Fire:
+
+Thread/ small concurrent unit:
+timing
+badge
+pass
+play
+history
+.
+.
+
+Task:
+ThreadClass
+
+Main:
+Where threads are created and triggered
+
+Single task Multithreading >> synchronization>> one by one
+Lock
+Join
+Multi task Multithreading
+
+System.Threading
+
+life cycle:
+
+Unstarted>> thread created
+
+Runnable>> Start
+
+Running>> 
+
+Not Runnable>> Sleep, Wait
+
+Terminate>> Abort
+
+ThreadStart
