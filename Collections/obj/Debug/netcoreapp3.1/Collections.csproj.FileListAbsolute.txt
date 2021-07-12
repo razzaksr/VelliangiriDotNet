@@ -1,0 +1,13 @@
+D:\Course backups\Dotnet\Velliangiri\C#\Collections\bin\Debug\netcoreapp3.1\Collections.exe
+D:\Course backups\Dotnet\Velliangiri\C#\Collections\bin\Debug\netcoreapp3.1\Collections.deps.json
+D:\Course backups\Dotnet\Velliangiri\C#\Collections\bin\Debug\netcoreapp3.1\Collections.runtimeconfig.json
+D:\Course backups\Dotnet\Velliangiri\C#\Collections\bin\Debug\netcoreapp3.1\Collections.runtimeconfig.dev.json
+D:\Course backups\Dotnet\Velliangiri\C#\Collections\bin\Debug\netcoreapp3.1\Collections.dll
+D:\Course backups\Dotnet\Velliangiri\C#\Collections\bin\Debug\netcoreapp3.1\Collections.pdb
+D:\Course backups\Dotnet\Velliangiri\C#\Collections\obj\Debug\netcoreapp3.1\Collections.csprojAssemblyReference.cache
+D:\Course backups\Dotnet\Velliangiri\C#\Collections\obj\Debug\netcoreapp3.1\Collections.AssemblyInfoInputs.cache
+D:\Course backups\Dotnet\Velliangiri\C#\Collections\obj\Debug\netcoreapp3.1\Collections.AssemblyInfo.cs
+D:\Course backups\Dotnet\Velliangiri\C#\Collections\obj\Debug\netcoreapp3.1\Collections.csproj.CoreCompileInputs.cache
+D:\Course backups\Dotnet\Velliangiri\C#\Collections\obj\Debug\netcoreapp3.1\Collections.dll
+D:\Course backups\Dotnet\Velliangiri\C#\Collections\obj\Debug\netcoreapp3.1\Collections.pdb
+D:\Course backups\Dotnet\Velliangiri\C#\Collections\obj\Debug\netcoreapp3.1\Collections.genruntimeconfig.cache
