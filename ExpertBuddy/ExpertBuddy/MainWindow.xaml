@@ -1,0 +1,18 @@
+﻿<Window x:Class="ExpertBuddy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExpertBuddy"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Black">
+        <Label Content="Expert Buddy Login" HorizontalAlignment="Center" Margin="0,33,0,0" VerticalAlignment="Top" Cursor="AppStarting" FontFamily="Bodoni MT Condensed" FontSize="20" FontWeight="Bold" Foreground="#FF9160FF" Width="280" FontStyle="Oblique" FontStretch="UltraCondensed"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="153,145,0,0" VerticalAlignment="Top" FontFamily="Algerian" FontSize="18" FontStyle="Oblique" FontWeight="UltraBold" Foreground="#FF6F71FF" Height="50"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="153,259,0,0" VerticalAlignment="Top" FontFamily="Algerian" FontSize="18" FontStyle="Oblique" FontWeight="UltraBold" Foreground="#FF6F71FF"/>
+        <TextBox x:Name="text1" HorizontalAlignment="Left" Margin="453,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" Height="34" Background="#FF090909" Foreground="#FF6BA0FA"/>
+        <PasswordBox x:Name="pass" HorizontalAlignment="Left" Margin="453,259,0,0" VerticalAlignment="Top" Width="202" Height="34" Background="#FF090909" Foreground="#FF6BA0FA"/>
+        <Button Content="Login Here" HorizontalAlignment="Left" Margin="260,353,0,0" VerticalAlignment="Top" Height="34" Width="113" Background="#FF050505" Foreground="#FF4A46F7" FontSize="16" FontWeight="UltraBold" FontStyle="Oblique" Click="Button_Click"/>
+        <Button Content="Clear" HorizontalAlignment="Left" Margin="439,353,0,0" VerticalAlignment="Top" Height="34" Width="101" FontSize="16" FontWeight="UltraBold" FontStyle="Oblique" Foreground="#FF68C0FF" Background="Black" Click="Button_Click_1"/>
+    </Grid>
+</Window>
