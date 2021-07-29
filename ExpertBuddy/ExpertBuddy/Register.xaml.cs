@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
 using System.Windows;
 using System.Data;
@@ -11,6 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Data.SqlClient;
+using System.Collections;
 
 namespace ExpertBuddy
 {
@@ -30,12 +30,19 @@ namespace ExpertBuddy
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            IList<Object> sks = (IList<Object>) skill.SelectedItems;
+            //MessageBox.Show("Selected is: "+skill.SelectedIndex);
+            /*string hai = skill.SelectedItem.ToString();
+            MessageBox.Show(hai);*/
+            IList i = skill.SelectedItems;
+            String tmp = "";
+            foreach (var t in i) { tmp += t.ToString() + ","; }
+            //MessageBox.Show("Valus is: " + skill.Items[skill.SelectedIndex]);
+            /*IList<Object> sks = (IList<Object>) skill.SelectedItems;
             String tmp = "";
             foreach(Object h in sks)
             {
                 tmp += h + ",";
-            }
+            }*/
             cmd = new SqlCommand("insert into expert(name,skill,exp) values(@a,@b,@c)", connection);
             cmd.Parameters.AddWithValue("@a",name.Text);
             cmd.Parameters.AddWithValue("@b", tmp);
@@ -51,7 +58,7 @@ namespace ExpertBuddy
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             name.Text = "";
-            exp.Text="";
+            exp.Text = "";
         }
     }
 }

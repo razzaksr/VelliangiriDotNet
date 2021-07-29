@@ -1,9 +1,10 @@
-﻿<Window x:Class="ExpertBuddy.Register"
+﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExpertBuddy"
+        xmlns:System="clr-namespace:System;assembly=System.Runtime" x:Class="ExpertBuddy.Register"
         mc:Ignorable="d"
         Title="Register" Height="450" Width="800">
     <Grid Background="Black">
@@ -12,11 +13,11 @@
         <Label Content="Expert Skill" HorizontalAlignment="Left" Margin="133,193,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.541,-1.055" Foreground="White" FontSize="20" FontWeight="UltraBold" FontStyle="Oblique"/>
         <Label Content="Expert Experience" HorizontalAlignment="Left" Margin="133,301,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.541,-1.055" Foreground="White" FontSize="20" FontWeight="UltraBold" FontStyle="Oblique"/>
         <TextBox x:Name="name" HorizontalAlignment="Left" Margin="453,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Height="36" FontSize="20" FontWeight="UltraBold" FontStyle="Oblique" Foreground="White" Background="Black"/>
-        <ListBox x:Name="skill" Margin="453,178,141,153" Background="Black" Foreground="White">
-            <ListBoxItem Background="Black" Content="Java" Foreground="White" FontSize="15"/>
-            <ListBoxItem Background="Black" Content="Dotnet" FontSize="15"/>
-            <ListBoxItem Background="Black" Content="React" FontSize="15"/>
-            <ListBoxItem Background="Black" Content="Spring" FontSize="15"/>
+        <ListBox x:Name="skill" Margin="453,178,141,153" Background="Black" Foreground="White" FontFamily="Arial Black" FontSize="20" SelectionMode="Multiple" >
+            <System:String>Java</System:String>
+            <System:String>Python</System:String>
+            <System:String>PHP</System:String>
+            <System:String>Dotnet</System:String>
         </ListBox>
         <TextBox x:Name="exp" HorizontalAlignment="Left" Margin="453,319,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="206" Height="32" FontSize="20" FontWeight="UltraBold" FontStyle="Oblique" Background="Black" Foreground="White"/>
         <Button Content="Register" HorizontalAlignment="Left" Margin="202,377,0,0" VerticalAlignment="Top" Height="39" Width="109" Background="Black" Foreground="White" FontSize="20" FontWeight="UltraBold" FontStyle="Oblique" Click="Button_Click"/>
