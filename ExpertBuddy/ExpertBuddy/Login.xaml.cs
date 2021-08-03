@@ -44,6 +44,9 @@ namespace ExpertBuddy
                 if(reader.Read())
                 {
                     MessageBox.Show("Authorised login");
+                    Home home = new Home();
+                    home.Show();
+                    this.Close();
                 }
                 else
                 {

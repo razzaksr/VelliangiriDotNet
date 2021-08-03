@@ -7,7 +7,18 @@
         mc:Ignorable="d"
         Title="Home" Height="450" Width="800" Background="Black" Foreground="White">
     <Grid>
-        
-           
+        <DockPanel HorizontalAlignment="Left">
+            <Menu DockPanel.Dock="Top" Width="100" Background="Black" Foreground="White">
+                <MenuItem Header="_Actions">
+                    <MenuItem Header="_Enroll" Click="MenuItem_Click" Background="Black" Foreground="White"/>
+                    <MenuItem Header="_Edit" Click="MenuItem_Click_1" Background="Black" Foreground="White"/>
+                    <MenuItem Header="_View" Click="MenuItem_Click_2" Background="Black" Foreground="White"/>
+                    <MenuItem Header="_Delete" Click="MenuItem_Click_4" Background="Black" Foreground="White"/>
+                    <Separator/>
+                    <MenuItem Header="_Exit" Click="MenuItem_Click_3" Background="Black" Foreground="White"/>
+                </MenuItem>
+            </Menu>
+        </DockPanel>
+
     </Grid>
 </Window>

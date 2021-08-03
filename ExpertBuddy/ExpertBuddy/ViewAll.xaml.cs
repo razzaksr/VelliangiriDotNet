@@ -26,17 +26,9 @@ namespace ExpertBuddy
             {
                 connection.Open();
                 SqlDataAdapter adapter = new SqlDataAdapter("select * from expert",connection);
-                //SqlCommand cmd = new SqlCommand("select * from expert", connection);
-                /*//DataTable table = new DataTable();
-                
-                dg.CommandBindings = table.Tables["expert"].DefaultView;*/
-                //SqlDataReader reader = cmd.ExecuteReader();
-                List list = new List();
-                DataSet table = new DataSet();
-                adapter.Fill(table, "expert");
-                //dg.Items = table.DefaultViewManager.CreateDataView();
-                
-                
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+                dg.ItemsSource = table.DefaultView;
             }
         }
     }
